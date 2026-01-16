@@ -1,6 +1,6 @@
 # Website-Task-Bot
 
-A small Python bot that automates common website tasks — for example: monitoring pages, running scheduled jobs, updating content, or performing simple site checks.
+A small Python bot that automates common website tasks
 
 Why this project exists
 - Save time by automating repetitive website tasks
