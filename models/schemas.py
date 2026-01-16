@@ -29,3 +29,29 @@ class TaskIntent(BaseModel):
     ] = Field(
         description="Scope of content to operate on"
     )
+
+
+class TaskRequest(BaseModel):
+    url: str = Field(
+        description="The target URL to process",
+        examples=["https://example.com"]
+    )
+    task_description: str = Field(
+        description="Description of the task to perform",
+        examples=["Extract all text and convert it into clean HTML sections"]
+    )
+
+
+class TaskResponse(BaseModel):
+    task_type: str = Field(
+        description="The classified task type"
+    )
+    output_format: str = Field(
+        description="The output format used"
+    )
+    scope: str = Field(
+        description="The scope of content processed"
+    )
+    content: str = Field(
+        description="The transformed content"
+    )
